@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR.js Example - Hiro Marker</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.1/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-marker type="pattern" url="Assets/Tartellete.patt">
+        <a-entity gltf-model="Tartellete.glb" position="0 0 0" scale="10 10 10" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+      </a-marker>
+
+      <a-marker type="pattern" url="Assets/Guacamole.patt">
+        <a-entity gltf-model="Guacamole.glb" position="0 0 0" scale="5 5 5" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+
+      </a-marker>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
