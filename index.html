@@ -9,7 +9,7 @@
   <body style="margin : 0px; overflow: hidden;">
       <a-scene embedded arjs>
         <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-        <a-marker type="pattern" url="assets/patterns/strawberry-cake-2.patt">
+        <a-marker type="pattern" url="assets/patterns/strawberry-cake.patt">
             <!-- Strawberry Cake -->
             <a-entity
             position="0 0 0"
@@ -17,7 +17,7 @@
             gltf-model="assets/models/strawberry-cake.glb"
             ></a-entity>
         </a-marker>
-        <a-marker type="pattern" url="assets/patterns/tiramisu-2.patt">
+        <a-marker type="pattern" url="assets/patterns/tiramisu.patt">
             <!-- Tiramisu -->
             <a-entity
             position="0 0 0"
@@ -39,6 +39,14 @@
             position="0 0 0"
             scale="5 5 5"
             gltf-model="assets/models/guacamole.glb"
+            ></a-entity>
+        </a-marker>
+        <a-marker type="pattern" url="assets/patterns/coke.patt">
+            <!-- Coke -->
+            <a-entity
+            position="0 0 0"
+            scale="5 5 5"
+            gltf-model="assets/models/coke.glb"
             ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
